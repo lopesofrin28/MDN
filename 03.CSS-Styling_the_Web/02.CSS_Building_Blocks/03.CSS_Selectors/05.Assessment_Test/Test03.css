@@ -1,0 +1,22 @@
+p a:visited{
+  color: green;
+}
+p a:hover{
+  text-decoration: none;
+}
+p a:link{
+  color: orange;
+}
+
+.container > *:first-child{
+  font-size: 150%;
+}
+.container > *:first-child::first-line{
+  color: red;
+}
+
+table tr:nth-child(2n) {
+  background-color: #333;
+  color: white;
+  border:none;
+}

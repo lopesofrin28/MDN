@@ -1,0 +1,70 @@
+*From object to iframe — other embedding technologies:
+
+-By now you should really be getting the hang of embedding things into your web pages, including images, video and audio.
+ At this point we'd like to take somewhat of a sideways step, looking at some elements that allow you to embed a
+ wide variety of content types into your webpages: the <iframe>, <embed> and <object> elements. <iframe>s are for embedding
+ other web pages, and the other two allow you to embed PDFs, SVG, and even Flash — a technology that is on the way out,
+ but which you'll still see semi-regularly.
+
+
+ *Iframes in detail
+-<iframe> elements are designed to allow you to embed other web documents into the current document.
+This is great for incorporating third-party content into your website that you might not have direct control over
+and don't want to have to implement your own version of — such as video from online video providers, commenting systems
+like Disqus, maps from online map providers, advertising banners, etc. The live editable examples you've been using
+through this course are implemented using <iframe>s.
+
+-This example includes the basic essentials needed to use an <iframe>:
+
+[a]allowfullscreen
+-If set, the <iframe> is able to be placed in fullscreen mode using the Full Screen API (somewhat beyond scope for this article.)
+
+[b]frameborder
+-If set to 1, this tells the browser to draw a border between this frame and other frames, which is the default behaviour.
+0 removes the border. Using this isn't really recommended any more, as the same effect can be better achieved
+ using border: none; in your CSS.
+
+[c] src
+This attribute, as with <video>/<img>, contains a path pointing to the URL of the document to be embedded.
+
+[d] width and height
+These attributes specify the width and height you want the iframe to be.
+
+[e]Fallback content
+In the same way as other similar elements like <video>, you can include fallback content
+between the opening and closing <iframe></iframe> tags that will appear if the browser doesn't support the <iframe>.
+In this case, we have included a link to the page instead. It is unlikely that you'll come across any browser
+that doesn't support <iframe>s these days.
+
+[f]sandbox
+This attribute, which works in slightly more modern browsers than the rest of the <iframe> features (e.g. IE 10 and above)
+requests heightened security settings; we'll say more about this in the next section.
+
+
+*Security concerns
+-Browser makers and Web developers have learned the hard way that iframes are a common target
+(official term: attack vector) for bad people on the Web (often termed hackers, or more accurately, crackers)
+to attack if they are trying to maliciously modify your webpage, or trick people into doing something they don't want to do,
+such as reveal sensitive information like usernames and passwords. Because of this, spec engineers and browser developers
+have developed various security mechanisms for making <iframe>s more secure, and there are also best practices to consider
+--we'll cover some of these below.
+
+
+*Always use the sandbox attribute
+-You want to give attackers as little power as you can to do bad things on your website, therefore you should give
+embedded content only the permissions needed for doing its job. Of course, this applies to your own content, too.
+A container for code where it can be used appropriately — or for testing — but can't cause any harm to the rest
+of the codebase (either accidental or malicious) is called a sandbox.
+
+
+*Configure CSP directives
+-CSP stands for content security policy and provides a set of HTTP Headers (metadata sent along with your web pages when they
+are served from a web server) designed to improve the security of your HTML document. When it comes to securing <iframe>s,
+you can configure your server to send an appropriate X-Frame-Options  header. This can prevent other websites from
+embedding your content in their web pages
+
+
+*The <embed> and <object> elements
+-The <embed> and <object> elements serve a different function to <iframe> — these elements are general purpose
+ embedding tools for embedding multiple types of external content, which include plugin technologies like
+ Java Applets and Flash, PDF (which can be shown in a browser with a PDF plugin), and even content like videos, SVG and images!

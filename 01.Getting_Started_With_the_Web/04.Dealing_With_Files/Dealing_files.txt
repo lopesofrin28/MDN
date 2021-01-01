@@ -1,0 +1,49 @@
+-Where should your website live on your computer?
+When you are working on a website locally on your computer,
+you should keep all the related files in a single folder that mirrors the published website's file structure on the server.
+This folder can live anywhere you like, but you should put it somewhere where you can easily find it, maybe on your Desktop,
+in your Home folder, or at the root of your hard drive.
+
+1] Choose a place to store your website projects.
+ Inside your chosen place, create a new folder called web-projects (or similar).
+  This is where all your website projects will live.
+
+2] Inside this first folder, create another folder to store your first website in.
+   Call it test-site (or something more imaginative).
+
+
+-What structure should your website have?
+Next, let's look at what structure our test site should have.
+The most common things we'll have on any website project we create are an index HTML file
+and folders to contain images, style files, and script files.
+Let's create these now:
+
+1] index.html: This file will generally contain your homepage content, that is,
+  the text and images that people see when they first go to your site.
+  Using your text editor, create a new file called index.html and save it just inside your test-site folder.
+
+2] images folder: This folder will contain all the images that you use on your site.
+  Create a folder called images, inside your test-site folder.
+
+3] styles folder: This folder will contain the CSS code used to style your content
+  (for example, setting text and background colors).
+  Create a folder called styles, inside your test-site folder.
+
+4] scripts folder: This folder will contain all the JavaScript code used to add interactive functionality to your site
+  (e.g. buttons that load data when clicked). Create a folder called scripts, inside your test-site folder.
+
+
+-File paths:-
+To make files talk to one another, you have to provide a file path between them — basically a route,
+so one file knows where another one is. To demonstrate this, we will insert a little bit of HTML into our index.html file,
+and make it display the image you chose in the article "What will your website look like?"
+
+*** Some general rules for file paths:
+
+1] To link to a target file in the same directory as the invoking HTML file, just use the filename, e.g. my-image.jpg.
+2] To reference a file in a subdirectory, write the directory name in front of the path,
+  plus a forward slash, e.g. subdirectory/my-image.jpg.
+3] To link to a target file in the directory above the invoking HTML file, write two dots.
+  So for example, if index.html was inside a subfolder of test-site and my-image.jpg was inside test-site,
+  you could reference my-image.jpg from index.html using ../my-image.jpg.
+  You can combine these as much as you like, for example ../subdirectory/another-subdirectory/my-image.jpg.

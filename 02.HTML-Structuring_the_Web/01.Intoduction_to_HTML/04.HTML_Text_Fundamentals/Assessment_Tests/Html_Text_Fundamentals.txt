@@ -1,0 +1,36 @@
+1] The basics: Headings and Paragraphs
+
+Most structured text consists of headings and paragraphs, whether you are reading a story,
+a newspaper, a college textbook, a magazine, etc.
+Structured content makes the reading experience easier and more enjoyable.
+-In HTML, each paragraph has to be wrapped in a <p> element.
+-Each heading has to be wrapped in a heading element.
+
+-There are six heading elements — <h1>, <h2>, <h3>, <h4>, <h5>, and <h6>.
+Each element represents a different level of content in the document; <h1> represents the main heading,
+<h2> represents subheadings, <h3> represents sub-subheadings, and so on.
+
+
+2] Lists
+1:Unordered
+-Unordered lists are used to mark up lists of items for which the order of the items doesn't matter.
+
+2:Ordered
+-Ordered lists are lists in which the order of the items does matter.
+
+3] Nesting lists
+-It is perfectly ok to nest one list inside another one.
+You might want to have some sub-bullets sitting below a top level bullet.
+
+4] Emphasis and importance
+a)Emphasis
+-When we want to add emphasis in spoken language, we stress certain words, subtly altering the meaning of what we are saying.
+ Similarly, in written language we tend to stress words by putting them in italics
+
+ b)Strong
+ -To emphasize important words, we tend to stress them in spoken language and bold them in written language.
+
+5] Italic, bold, underline...
+-<i> is used to convey a meaning traditionally conveyed by italic: Foreign words, taxonomic designation, technical terms, a thought...
+-<b> is used to convey a meaning traditionally conveyed by bold: Key words, product names, lead sentence...
+-<u> is used to convey a meaning traditionally conveyed by underline: Proper name, misspelling...

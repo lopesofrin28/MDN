@@ -1,0 +1,12 @@
+span {
+  margin: 20px;
+  padding: 20px;
+  width: 80px;
+  height: 50px;
+  background-color: lightblue;
+  border: 2px solid blue;
+  display: inline-block;
+}
+
+In this next example, we have added display: inline-block to our <span> element. Try changing this to display: block or removing the
+line completely to see the difference in display models.

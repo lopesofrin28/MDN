@@ -1,0 +1,78 @@
+Handling list spacing
+When styling lists, you need to adjust their styles so they keep the same vertical spacing as their surrounding elements (such as paragraphs and images; sometimes called vertical rhythm), and the same horizontal spacing as each other
+
+
+List-specific styles
+Now we've looked at general spacing techniques for lists, let's explore some list-specific properties. There are three properties you should know about to start with, which can be set on <ul> or <ol> elements:
+
+      list-style-type: Sets the type of bullets to use for the list, for example, square or circle bullets for an unordered list, or numbers, letters or roman numerals for an ordered list.
+      list-style-position: Sets whether the bullets appear inside the list items, or outside them before the start of each item.
+      list-style-image: Allows you to use a custom image for the bullet, rather than a simple square or circle.
+
+
+-Bullet styles
+As mentioned above, the list-style-type property allows you to set what type of bullet to use for the bullet points.
+
+-Bullet position
+The list-style-position property sets whether the bullets appear inside the list items, or outside them before the start of each item. The default value is outside, which causes the bullets to sit outside the list items,
+If you set the value to inside, the bullets will sit inside the lines.
+
+-Using a custom bullet image
+The list-style-image property allows you to use a custom image for your bullet.
+However, this property is a bit limited in terms of controlling the position, size, etc. of the bullets. You are better off using the background family of properties, which you've learned in the Backgrounds and borders article.
+
+
+
+-list-style shorthand
+The three properties mentioned above can all be set using a single shorthand property, list-style.
+
+For example, the following CSS:
+
+ul {
+ list-style-type: square;
+ list-style-image: url(example.png);
+ list-style-position: inside;
+}
+Could be replaced by this:
+
+ul {
+ list-style: square url(example.png) inside;
+}
+
+
+
+*Controlling list counting
+Sometimes you might want to count differently on an ordered list — e.g. starting from a number other than 1, or counting backwards, or counting in steps of more than 1. HTML and CSS have some tools to help you here.
+
+
+-start
+The start attribute allows you to start the list counting from a number other than 1. The following example:
+
+    <ol start="4">
+      <li>Toast pita, leave to cool, then slice down the edge.</li>
+      <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
+      <li>Wash and chop the salad.</li>
+      <li>Fill pita with salad, hummus, and fried halloumi.</li>
+    </ol>
+
+
+-reversed
+The reversed attribute will start the list counting down instead of up. The following example:
+
+    <ol start="4" reversed>
+      <li>Toast pita, leave to cool, then slice down the edge.</li>
+      <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
+      <li>Wash and chop the salad.</li>
+      <li>Fill pita with salad, hummus, and fried halloumi.</li>
+    </ol>
+
+
+-value
+The value attribute allows you to set your list items to specific numerical values. The following example:
+
+    <ol>
+      <li value="2">Toast pita, leave to cool, then slice down the edge.</li>
+      <li value="4">Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
+      <li value="6">Wash and chop the salad.</li>
+      <li value="8">Fill pita with salad, hummus, and fried halloumi.</li>
+    </ol>

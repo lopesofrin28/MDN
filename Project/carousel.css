@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* { 
+    font-family: 'Poppins', sans-serif; 
+}
+
+body{
+    font-family: 'Poppins', sans-serif; 
+    background-image: linear-gradient(to right, #eceff1, #cfd8dc);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CAROUSEL OUR TEAM */
+.testimonial{
+    background: white;
+    text-align: center;
+    padding:30px 30px 50px;
+    margin: 0 15px 100px;
+    position: relative;
+    margin-top: 168px;
+}
+
+.testimonial:before,.testimonial:after{
+    content:""; 
+    border-top: 40px solid white;
+    border-right: 125px solid transparent;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+}
+
+.testimonial:after{
+    border-right: none;
+    border-left: 125px solid transparent;
+    left:auto;
+    right:0;
+}
+
+.testimonial .icon{
+    display: inline-block;
+    font-size: 80px;
+    color: #008080;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+
+
+.testimonial .description{
+    font-size: 16px;
+    color: #777;
+    text-align: justify;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    letter-spacing: -1px;
+
+}
+
+.testimonial .testimonial-content{
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.testimonial .pic{
+    display: inline-block;
+    border: 4px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px #f4770b;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+
+.testimonial .pic img{
+    width: 120px;
+    height: auto;
+}
+
+.testimonial .title{
+    font-size: 15px;
+    font-weight: bold;
+    color: #008080;
+    text-transform: capitalize;
+    margin: 0 0 5px 0;
+}
+
+.testimonial .post{
+    display: block;
+    font-size: 14px;
+    color: #bfb8ff ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pic img{
+    width: 100px !important;
+    height: 50px;
+}
+
+.owl-theme .owl-controls{
+    margin-top: 60px;
+}

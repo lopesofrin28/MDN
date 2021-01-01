@@ -1,0 +1,75 @@
+*Adding CSS to our document
+-The very first thing we need to do is to tell the HTML document that we have some CSS rules we want it to use.
+There are three different ways to apply CSS to an HTML document that you'll commonly come across, however, for now,
+we will look at the most usual and useful way of doing so — linking CSS from the head of your document.
+-This <link> element tells the browser that we have a stylesheet, using the rel attribute, and the location of
+that stylesheet as the value of the href attribute. You can test that the CSS works by adding a rule to styles.css.
+
+*Styling HTML elements
+-By making our heading red we have already demonstrated that we can target and style an HTML element. We do this
+by targeting an element selector — this is a selector that directly matches an HTML element name. To target all
+paragraphs in the document you would use the selector p.
+
+*Changing the default behavior of elements
+-When we look at a well-marked up HTML document, even something as simple as our example, we can see how the browser
+is making the HTML readable by adding some default styling. Headings are large and bold and our list has bullets.
+This happens because browsers have internal stylesheets containing default styles, which they apply to all pages by
+default; without them all of the text would run together in a clump and we would have to style everything from
+scratch. All modern browsers display HTML content by default in pretty much the same way.
+
+-However, you will often want something other than the choice the browser has made. This can be done by simply
+choosing the HTML element that you want to change, and using a CSS rule to change the way it looks.
+
+*Adding a class
+-So far we have styled elements based on their HTML element names. This works as long as you want all of the elements
+of that type in your document to look the same. Most of the time that isn't the case and so you will need to find a way
+to select a subset of the elements without changing the others. The most common way to do this is to add a class
+to your HTML element and target that class.
+
+*Styling things based on their location in a document
+-There are times when you will want something to look different based on where it is in the document. There are a number
+of selectors that can help you here, but for now we will look at just a couple. In our document are two <em> elements
+— one inside a paragraph and the other inside a list item. To select only an <em> that is nested inside an <li> element
+I can use a selector called the descendant combinator, which simply takes the form of a space between two other selectors.
+
+-This selector will select any <em> element that is inside (a descendant of) an <li>. So in your example document,
+you should find that the <em> in the third list item is now purple, but the one inside the paragraph is unchanged.
+
+-Something else you might like to try is styling a paragraph when it comes directly after a heading at the
+same hierarchy level in the HTML. To do so place a +  (an adjacent sibling combinator) between the selectors.
+ex: h1 + p {
+      font-size: 200%;
+    }
+
+
+*Styling things based on state
+-The final type of styling we shall take a look at in this tutorial is the ability to style things based on their state.
+A straightforward example of this is when styling links. When we style a link we need to target the <a> (anchor) element.
+This has different states depending on whether it is unvisited, visited, being hovered over, focused via the keyboard,
+or in the process of being clicked (activated). You can use CSS to target these different states
+
+
+*Combining selectors and combinators
+-It is worth noting that you can combine multiple selectors and combinators together.
+For example:
+
+/* selects any <span> that is inside a <p>, which is inside an <article>  */
+article p span { ... }
+
+/* selects any <p> that comes directly after a <ul>, which comes directly after an <h1>  */
+h1 + ul + p { ... }
+
+-You can combine multiple types together, too. Try adding the following into your code:
+
+body h1 + p .special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+}
+
+
+*Wrapping up
+-In this tutorial, we have taken a look at a number of ways in which you can style a document using CSS.
+We will be developing this knowledge as we move through the rest of the lessons. However you now already
+know enough to style text, apply CSS based on different ways of targeting elements in the document, and
+look up properties and values in the MDN documentation.

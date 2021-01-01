@@ -1,0 +1,40 @@
+In Installing basic softwares, we show you what tools you need to do simple web development and how to install them properly.
+
+1] What tools do the professionals use?
+
+- A Computer.
+- A Text Editor.[Links to download below:]
+      Visual Studio Code https://code.visualstudio.com/
+      NotePad++ https://notepad-plus-plus.org/
+      SubLime Text https://www.sublimetext.com/
+      Atom https://atom.io/
+      GNU Emacs https://www.gnu.org/software/emacs/
+      Vim https://www.vim.org/
+
+- Web browsers
+      Firefox https://www.mozilla.org/en-US/firefox/new/
+      Chrome https://www.google.com/chrome/
+      Opera https://www.opera.com/
+      Safari https://www.apple.com/safari/
+      Microsoft Edge https://www.microsoft.com/en-us/edge
+
+-Graphics Editor
+      GIMP https://www.gimp.org/
+      Paint.net https://www.getpaint.net/
+      Photoshop https://www.adobe.com/products/photoshop.html
+      XD https://www.adobe.com/products/xd.html
+
+-A Version Control System
+      Git https://git-scm.com/ (Version Control System)
+      GitHub https://github.com/ (Hosting System)
+      GitLab https://about.gitlab.com/ (Hosting System)
+
+-A FTP Program
+      Cyberduck https://cyberduck.io/
+      Fetch https://fetchsoftworks.com/
+      FileZilla https://filezilla-project.org/
+
+-An Automation System
+      Webpack https://webpack.js.org/
+      Grunt https://gruntjs.com/
+      Gulp https://gulpjs.com/

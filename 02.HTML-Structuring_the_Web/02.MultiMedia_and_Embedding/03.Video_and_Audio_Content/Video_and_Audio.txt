@@ -1,0 +1,57 @@
+*Video and audio on the web
+
+1]The <video> element
+-The <video> element allows you to embed a video very easily.
+
+*Other <video> features
+-The new features are:
+
+*width and height
+-You can control the video size either with these attributes or with CSS. In both cases, videos maintain their
+native width-height ratio — known as the aspect ratio. If the aspect ratio is not maintained by the sizes you set,
+the video will grow to fill the space horizontally, and the unfilled space will just be given a solid background color by default.
+
+*autoplay
+-Makes the audio or video start playing right away, while the rest of the page is loading.
+You are advised not to use autoplaying video (or audio) on your sites, because users can find it really annoying.
+
+*loop
+-Makes the video (or audio) start playing again whenever it finishes. This can also be annoying, so only use if really necessary.
+
+*muted
+-Causes the media to play with the sound turned off by default.
+
+*poster
+-The URL of an image which will be displayed before the video is played.
+It is intended to be used for a splash screen or advertising screen.
+
+*preload
+-Used for buffering large files; it can take one of three values:
+  "none" does not buffer the file
+  "auto" buffers the media file
+  "metadata" buffers only the metadata for the file
+
+
+
+2] The <audio> element
+-The <audio> element works just like the <video> element, with a few small differences
+-This takes up less space than a video player, as there is no visual component —
+you just need to display controls to play the audio. Other differences from HTML video are as follows:
+
+-The <audio> element doesn't support the width/height attributes — again, there is no visual component,
+so there is nothing to assign a width or height to.
+-It also doesn't support the poster attribute — again, no visual component.
+
+
+
+*Displaying video text tracks
+-Wouldn't it be nice to be able to provide these people with a transcript of the words being spoken in the audio/video?
+Well, thanks to HTML video, you can. To do so we use the WebVTT file format and the <track> element
+
+-subtitles
+Translations of foreign material, for people who don't understand the words spoken in the audio.
+-captions
+Synchronized transcriptions of dialog or descriptions of significant sounds, to let people who can't hear the audio
+ understand what is going on.
+-timed descriptions
+Text which should be spoken by the media player in order to describe important visuals to blind or otherwise visually impaired users.

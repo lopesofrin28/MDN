@@ -1,0 +1,47 @@
+*Description lists
+-In HTML text fundamentals, we walked through how to mark up basic lists in HTML,
+ but we didn't mention the third type of list you'll occasionally come across — description lists.
+ The purpose of these lists is to mark up a set of items and their associated descriptions, such as terms and definitions,
+  or questions and answers.
+
+-Description lists use a different wrapper than the other list types — <dl>;
+in addition each term is wrapped in a <dt> (description term) element, and each description is wrapped in
+a <dd> (description definition) element.
+
+
+*Quotations
+- HTML also has features available for marking up quotations; which element you use depends on whether you are
+marking up a block or inline quotation.
+
+1]Blockquotes
+2]Inline quotations
+
+
+*Citations
+-The content of the cite attribute sounds useful, but unfortunately browsers, screenreaders, etc.
+don't really do much with it. There is no way to get the browser to display the contents of cite, without
+writing your own solution using JavaScript or CSS.
+
+*Abbreviations
+-Another fairly common element you'll meet when looking around the Web is <abbr> —
+this is used to wrap around an abbreviation or acronym, and provide a full expansion of the term (included inside a title attribute.)
+
+*Superscript and subscript
+-You will occasionally need to use superscript and subscript when marking up items like dates,
+chemical formulae, and mathematical equations so they have the correct meaning.
+The <sup> and <sub> elements handle this job.
+
+*Representing computer code:
+-There are a number of elements available for marking up computer code using HTML:
+
+<code>: For marking up generic pieces of computer code.
+<pre>: For retaining whitespace (generally code blocks) — if you use indentation or excess whitespace inside your text,
+browsers will ignore it and you will not see it on your rendered page.
+If you wrap the text in <pre></pre> tags however, your whitespace will be rendered identically
+to how you see it in your text editor.
+<var>: For specifically marking up variable names.
+<kbd>: For marking up keyboard (and other types of) input entered into the computer.
+<samp>: For marking up the output of a computer program.
+
+*Marking up times and dates
+-HTML also provides the <time> element for marking up times and dates in a machine-readable format.

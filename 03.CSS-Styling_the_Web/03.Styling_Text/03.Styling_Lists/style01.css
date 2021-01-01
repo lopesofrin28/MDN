@@ -1,0 +1,13 @@
+ul {
+  list-style:square;
+  list-style-position:inside;
+  background-color:lightblue;
+}
+ul li,ol li{
+  line-height:1.5;
+}
+ol li{
+  list-style-type:lower-alpha;
+  background-color: green;
+  list-style-position: outside;
+}

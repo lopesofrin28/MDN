@@ -1,0 +1,40 @@
+*What is a pseudo-class?
+-A pseudo-class is a selector that selects elements that are in a specific state, e.g. they are the first element of their type,
+or they are being hovered over by the mouse pointer. They tend to act as if you had applied a class to some part of your document,
+often helping you cut down on excess classes in your markup, and giving you more flexible, maintainable code.
+
+-Pseudo-classes are keywords that start with a colon:
+
+    :pseudo-class-name
+
+
+*User-action pseudo classes:
+-Some pseudo-classes only apply when the user interacts with the document in some way. These user-action pseudo-classes,
+sometimes referred to as dynamic pseudo-classes, act as if a class had been added to the element when the user interacts with it.
+Examples include:
+
+:hover — mentioned above; this only applies if the user moves their pointer over an element, typically a link.
+:focus — only applies if the user focuses the element using keyboard controls.
+
+
+*What is a pseudo-element?
+-Pseudo-elements behave in a similar way, however they act as if you had added a whole new HTML element into the markup, rather
+than applying a class to existing elements. Pseudo-elements start with a double colon ::.
+
+  ::pseudo-element-name
+
+
+*Combining pseudo-classes and pseudo-elements
+-If you wanted to make the first line of the first paragraph bold you could chain the :first-child and ::first-line selectors together.
+Try editing the previous live example so it uses the following CSS. We are saying that we want to select the first line, of the
+first <p> element, which is inside an <article> element.
+
+
+*Generating content with ::before and ::after
+-There are a couple of special pseudo-elements, which are used along with the content property to insert content into your
+document using CSS.
+-These pseudo-elements are also frequently used to insert an empty string, which can then be styled just like any element on the page.
+-The use of the ::before and ::after pseudo-elements along with the content property is referred to as "Generated Content" in CSS,
+and you will often see this technique being used for various tasks. A great example is the site CSS Arrow Please, which helps you
+to generate an arrow with CSS. Look at the CSS as you create your arrow and you will see the ::before and ::after pseudo-elements
+in use. Whenever you see these selectors, look at the content property to see what is being added to the document.

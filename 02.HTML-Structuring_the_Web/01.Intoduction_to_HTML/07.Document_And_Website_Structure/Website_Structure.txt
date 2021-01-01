@@ -1,0 +1,54 @@
+*Basic sections of a document
+-Webpages can and will look pretty different from one another, but they all tend to share similar standard components,
+ unless the page is displaying a fullscreen video or game, is part of some kind of art project, or is just badly structured:
+
+1]header: <header>
+-Usually a big strip across the top with a big heading, logo, and perhaps a tagline.
+This usually stays the same from one webpage to another.
+
+2]navigation bar: <nav>
+Links to the site's main sections; usually represented by menu buttons, links, or tabs.
+Like the header, this content usually remains consistent from one webpage to another —
+having inconsistent navigation on your website will just lead to confused, frustrated users.
+Many web designers consider the navigation bar to be part of the header rather than an individual component,
+but that's not a requirement; in fact, some also argue that having the two separate is better for accessibility,
+as screen readers can read the two features better if they are separate.
+
+3]main content: <main>
+A big area in the center that contains most of the unique content of a given webpage,
+for example, the video you want to watch, or the main story you're reading, or the map you want to view,
+or the news headlines, etc. This is the one part of the website that definitely will vary from page to page!
+
+Note: main content: <main>, with various content subsections represented by <article>, <section>, and <div> elements.
+[A] article:
+-The HTML <article> element represents a self-contained composition in a document, page, application, or site,
+which is intended to be independently distributable or reusable (e.g., in syndication).
+Examples include: a forum post, a magazine or newspaper article, or a blog entry.
+
+[B] Section:
+-The HTML <section> element represents a standalone section — which doesn't have a more specific semantic element
+to represent it — contained within an HTML document. Typically, but not always, sections have a heading.
+
+[C] Div:
+-The HTML Content Division element (<div>) is the generic container for flow content.
+It has no effect on the content or layout until styled using CSS.
+
+
+4]sidebar: <aside>
+Some peripheral info, links, quotes, ads, etc. Usually, this is contextual to what is contained in the main content
+ (for example on a news article page, the sidebar might contain the author's bio, or links to related articles)
+ but there are also cases where you'll find some recurring elements like a secondary navigation system.
+
+ [A] Aside:
+ -The HTML <aside> element represents a portion of a document whose content is only indirectly related to the
+ document's main content. Asides are frequently presented as sidebars or call-out boxes.
+ Example CSS: {
+               float:right;
+               }
+
+
+5]footer:
+A strip across the bottom of the page that generally contains fine print, copyright notices, or contact info.
+It's a place to put common information (like the header) but usually, that information is not critical or
+secondary to the website itself. The footer is also sometimes used for SEO purposes, by providing links
+for quick access to popular content.

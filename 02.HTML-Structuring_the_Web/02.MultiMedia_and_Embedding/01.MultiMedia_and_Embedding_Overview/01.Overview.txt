@@ -1,0 +1,32 @@
+*Multimedia and Embedding
+-This module explores how to use HTML to include multimedia in your web pages, including the different ways
+that images can be included, and how to embed video, audio, and even entire webpages.
+
+This module contains the following articles which will take you through all the fundamentals of embedding multimedia on webpages.
+
+1]Images in HTML
+-There are other types of multimedia to consider, but it is logical to start with the humble <img> element used to embed
+ a simple image in a webpage. In this article we'll look at how to use it in more depth, including basics, annotating it
+ with captions using <figure>, and how it relates to CSS background images.
+
+2]Video and audio content
+Next, we'll look at how to use the HTML5 <video> and <audio> elements to embed video and audio on our pages,
+including basics, providing access to different file formats to different browsers, adding captions and subtitles,
+ and how to add fallbacks for older browsers.
+
+3]From <object> to <iframe> — other embedding technologies
+At this point we'd like to take somewhat of a sideways step, looking at a couple of elements that allow you
+to embed a wide variety of content types into your webpages: the <iframe>, <embed> and <object> elements.
+<iframe>s are for embedding other web pages, and the other two allow you to embed PDFs, SVG, and even Flash —
+a technology on its way out, but which you may still see semi-regularly.
+
+4]Adding vector graphics to the web
+Vector graphics can be very useful in certain situations. Unlike regular formats like PNG/JPG,
+they don't distort/pixelate when zoomed in — they can remain smooth when scaled. This article introduces you
+to what vector graphics are and how to include the popular SVG format in web pages.
+
+5]Responsive images
+In this article, we'll learn about the concept of responsive images — images that work well on devices
+ with widely differing screen sizes, resolutions, and other such features — and look at what tools HTML
+ provides to help implement them. This helps to improve performance across different devices.
+ Responsive images are just one part of responsive design, a future CSS topic for you to learn.

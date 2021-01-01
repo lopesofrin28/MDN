@@ -1,0 +1,27 @@
+1. Getting started with the Web is a concise series introducing you to the practicalities of web development.
+   You'll set up the tools you need to construct a simple webpage and publish your own simple code.
+
+2. The story of your first website:
+- It's a lot of work to create a professional website, so if you're new to web development,
+  we encourage you to start small. You won't build another Facebook right away,
+  but it's not hard to get your own simple website online, so we'll start there.
+
+- By working through the articles listed below in order,
+  you will go from nothing to getting your first webpage online.
+  Let's begin our journey!
+
+  Follow the below Website For Web development:
+  https://shahyaseen71.gitbook.io/web-development-internship-program/
+
+  Front-end web developer
+  https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer
+
+Steps:
+1] Installing Basic Software.
+2] What will the website Look Like.
+3] Dealing with files.
+4] HTML basics.
+5] CSS Basics.
+6] JavaScript Basics.
+7] Publishing the Website.
+8] How The Web Works.

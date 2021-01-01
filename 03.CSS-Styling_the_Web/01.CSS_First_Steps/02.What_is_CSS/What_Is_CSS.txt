@@ -1,0 +1,49 @@
+What is CSS for?
+-CSS is a language for specifying how documents are presented to users — how they are styled, laid out, etc.
+
+A document is usually a text file structured using a markup language — HTML is the most common markup language,
+but you may also come across other markup languages such as SVG or XML.
+
+
+*CSS syntax
+-CSS is a rule-based language — you define rules specifying groups of styles that should be applied to particular elements
+or groups of elements on your web page. For example "I want the main heading on my page to be shown as large red text."
+
+The following code shows a very simple CSS rule that would achieve the styling described above:
+h1 {
+    color: red;
+    font-size: 5em;
+}
+
+-The rule opens with a selector . This selects the HTML element that we are going to style. In this case we are styling level
+ one headings (<h1>).
+-We then have a set of curly braces { }. Inside those will be one or more declarations, which take the form
+of property and value pairs. Each pair specifies a property of the element(s) we are selecting, then a value
+that we'd like to give the property.
+
+*CSS Modules
+-As there are so many things that you could style using CSS, the language is broken down into modules. You'll see reference
+to these modules as you explore MDN and many of the documentation pages are organized around a particular module.
+For example, you could take a look at the MDN reference to the Backgrounds and Borders module to find out what
+its purpose is, and what different properties and other features it contains.
+-At this stage you don't need to worry too much about how CSS is structured, however it can make it easier
+to find information if, for example, you are aware that a certain property is likely to be found among other
+similar things and are therefore probably in the same specification.
+
+*CSS Specifications
+-All web standards technologies (HTML, CSS, JavaScript, etc.) are defined in giant documents called specifications
+(or simply "specs"), which are published by standards organizations (such as the W3C, WHATWG, ECMA, or Khronos)
+and define precisely how those technologies are supposed to behave.
+-As a newcomer to CSS, it is likely that you will find the CSS specs overwhelming — they are intended for engineers
+to use to implement support for the features in user agents, not for web developers to read to understand CSS. Many
+experienced developers would much rather refer to MDN documentation or other tutorials. It is however worth knowing
+that they exist, understanding the relationship between the CSS you are using, browser support (see below), and the specs.
+
+*Browser support
+-Once CSS has been specified then it is only useful for us in developing web pages if one or more browsers have
+implemented it. This means that the code has been written to turn the instruction in our CSS file into something
+that can be output to the screen. We'll look at this process more in the lesson How CSS works. It is unusual
+for all browsers to implement a feature at the same time, and so there is usually a gap where you can use
+some part of CSS in some browsers and not in others. For this reason, being able to check implementation
+status is useful. On each property page on MDN you can see the status of the property you are interested in,
+ so you can tell if you will be able to use it on a website.

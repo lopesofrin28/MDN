@@ -1,0 +1,47 @@
+* What is HTML?
+  HTML (Hypertext Markup Language) is not a programming language.
+  It is a markup language that tells web browsers how to structure the web pages you visit.
+  It can be as complicated or as simple as the web developer wants it to be.
+  HTML consists of a series of elements, which you use to enclose, wrap, or mark up
+  different parts of content to make it appear or act in a certain way.
+  The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on.
+
+
+* Block versus inline elements:
+
+-Block-level elements form a visible block on a page.
+  A block-level element appears on a new line following the content that precedes it.
+  Any content that follows a block-level element also appears on a new line.
+  Block-level elements are usually structural elements on the page.
+  For example, a block-level element might represent paragraphs, lists, navigation menus, or footers.
+  A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.
+
+-Inline elements are contained within block-level elements, and surround only small parts of the document’s content.
+ (not entire paragraphs or groupings of content) An inline element will not cause a new line to appear in the document.
+  It is typically used with text. For example, as an <a> element (hyperlink) or emphasis elements such as <em> or <strong>.
+
+
+* Empty elements:
+
+-Not all elements follow the pattern of an opening tag, content, and a closing tag.
+Some elements consist of a single tag, which is typically used to insert/embed something in the document.
+For example, the <img> element embeds an image file onto a page.
+
+* Attributes:
+
+-Attributes contain extra information about the element that won't appear in the content.
+-An attribute should have:
+    -A space between it and the element name. (For an element with more than one attribute, the attributes should be
+    separated by spaces too.)
+    -The attribute name, followed by an equal sign.
+    -An attribute value, wrapped with opening and closing quote marks.
+
+
+* Boolean attributes:
+  -Sometimes you will see attributes written without values. This is entirely acceptable.
+  These are called Boolean attributes. Boolean attributes can only have one value, which is generally the same as the attribute name.
+  For example, consider the disabled attribute, which you can assign to form input elements.
+  (You use this to disable the form input elements so the user can't make entries.
+  The disabled elements typically have a grayed-out appearance.)
+
+  

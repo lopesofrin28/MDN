@@ -1,0 +1,27 @@
+Structuring the web with HTML
+https://developer.mozilla.org/en-US/docs/Learn/HTML
+
+Welcome to our front-end web developer learning pathway!
+https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer
+
+
+Before starting this module, you don't need any previous HTML knowledge,
+but you should have at least basic familiarity with using computers and using the web passively
+(i.e., just looking at it and consuming content). You should have a basic work environment set up
+(as detailed in Installing basic software), and understand how to create and manage files (as detailed in Dealing with files).
+
+* This module contains the following articles, which will take you through all the basic theory of HTML
+  and provide ample opportunity for you to test out some skills.
+
+  1] Getting started with HTML
+  2] What’s in the head? Metadata in HTML
+  3] HTML text fundamentals
+  4] Creating hyperlinks
+  5] Advanced text formatting
+  6] Document and website structure
+  7] Debugging HTML
+
+* Assessment:
+The following assessments will test your understanding of the HTML basics covered in the guides above.
+  1] Marking up a letter
+  2] Structuring a page of content

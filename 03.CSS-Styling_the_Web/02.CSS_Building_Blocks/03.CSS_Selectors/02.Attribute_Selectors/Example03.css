@@ -1,0 +1,12 @@
+li[class^="a"] {
+    background-color: yellow;
+}
+
+li[class^="a" i] {
+    color: red;
+}
+
+/*
+In the example below, the first selector will match a value that begins with a — it only matches the first list item because the
+other two list items start with an uppercase A. The second selector uses the case-insensitive flag and so matches all of the list
+ items. */

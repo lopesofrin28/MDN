@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* { 
+    font-family: 'Poppins', sans-serif; 
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #eceff1, #cfd8dc);
+
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.about{
+    width: 100%;
+    height: 400px;
+    background-image: url("OurTeam1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.text{
+    font-size: 30px;
+    text-transform: capitalize;
+    color:#fff;
+    font-family: sans-serif;
+    text-shadow: 0px 15px 12px #000;
+}
+.line{
+    width: 200px;
+    height: 8px;
+    background-color: #d3cdcdec;
+    display: block;
+    position: relative;
+    left: 12%;
+    border-radius: 5px;
+    box-shadow: 0px 15px 12px 0px #000;
+}
+.content{
+    width: 100%;
+    height: auto;
+    background-color: #94a09a;
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    background-image: linear-gradient(to right, #eceff1, #cfd8dc);
+
+}
+b{
+    font-size: 50px;
+    color: #000;
+    font-weight: 500px;
+
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto    ;
+    /* flex:4; */
+    
+}
+.services span{
+    justify-content: space-evenly;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    padding :10px 5px 10px 5px;
+    border-radius:5px;
+    margin:5px;
+    background-color: #008080 ;
+    color:	#b2d8d8;
+
+
+    
+    text-align: center;
+    line-height: 55px;
+}
+.services span:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+
+

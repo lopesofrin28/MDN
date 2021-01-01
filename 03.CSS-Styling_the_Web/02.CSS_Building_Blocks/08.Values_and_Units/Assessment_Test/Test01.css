@@ -1,0 +1,24 @@
+.hex {
+  background-color: #86DEFA;
+}
+
+.rgb {
+background-color:rgb(134, 222, 250);
+border-radius:5px;
+}
+
+.hsl {
+background-color:hsl(194, 92%, 75%);
+}
+
+.transparency {
+background-color:rgba(134, 222, 250,0.2);
+}
+
+.box,ul{
+  list-style: none;
+}
+li{
+  margin: 5px;
+
+}

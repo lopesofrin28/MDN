@@ -1,0 +1,63 @@
+This module contains the following articles, which cover the most essential parts of the CSS language. Along the way you'll come
+across plenty of exercises to allow you to test your understanding.
+
+1]Cascade and inheritance
+The aim of this lesson is to develop your understanding of some of the most fundamental concepts of CSS — the cascade,
+specificity, and inheritance — which control how CSS is applied to HTML and how conflicts are resolved.
+
+2]CSS selectors
+There are a wide variety of CSS selectors available, allowing for fine-grained precision when selecting elements to style.
+In this article and its sub-articles, we'll run through the different types in great detail, seeing how they work. The sub-articles
+are as follows:
+
+-Type, class, and ID selectors
+-Attribute selectors
+-Pseudo-classes and pseudo-elements
+-Combinators
+
+3]The box model
+Everything in CSS has a box around it, and understanding these boxes is key to being able to create layouts with CSS, or to
+align items with other items. In this lesson, we will take a proper look at the CSS Box Model, in order that you can move onto
+more complex layout tasks with an understanding of how it works and the terminology that relates to it.
+
+4]Backgrounds and borders
+In this lesson we will take a look at some of the creative things you can do with CSS backgrounds and borders. From adding
+gradients, background images, and rounded corners, backgrounds and borders are the answer to a lot of styling questions in CSS.
+
+5]Handling different text directions
+In recent years, CSS has evolved in order to better support different directionality of content, including right-to-left but
+also top-to-bottom content (such as Japanese) — these different directionalities are called writing modes. As you progress in
+your study and begin to work with layout, an understanding of writing modes will be very helpful to you, therefore we will
+introduce them in this article.
+
+6]Overflowing content
+In this lesson we will look at another important concept in CSS — overflow. Overflow is what happens when there is too much
+content to be contained comfortably inside a box. In this guide, you will learn what it is and how to manage it.
+
+7]CSS values and units
+Every property used in CSS has a value or set of values that are allowed for that property. In this lesson, we will take a
+look at some of the most common values and units in use.
+
+8]Sizing items in CSS
+In the various lessons so far you have come across a number of ways to size items on a web page using CSS. Understanding how
+big the different features in your design will be is important, and in this lesson, we will summarize the various ways elements
+get a size via CSS and define a few terms around sizing that will help you in the future.
+
+8]Images, media, and form elements
+In this lesson we will take a look at how certain special elements are treated in CSS. Images, other media, and form elements
+behave a little differently in terms of your ability to style them with CSS than regular boxes. Understanding what is and
+isn't possible can save some frustration, and this lesson will highlight some of the main things that you need to know.
+
+9]Styling tables
+Styling an HTML table isn't the most glamorous job in the world, but sometimes we all have to do it. This article provides
+a guide to making HTML tables look good, with some specific table styling techniques highlighted.
+
+10]Debugging CSS
+Sometimes when writing CSS you will encounter an issue where your CSS doesn't seem to be doing what you expect. This article
+will give you guidance on how to go about debugging a CSS problem, and show you how the DevTools included in all modern browsers
+can help you find out what is going on.
+
+11]Organizing your CSS
+As you start to work on larger stylesheets and big projects you will discover that maintaining a huge CSS file can be challenging.
+In this article, we will take a brief look at some best practices for writing your CSS to make it easily maintainable, and some
+of the solutions you will find in use by others to help improve maintainability.

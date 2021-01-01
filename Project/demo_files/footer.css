@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  color:#d9d9d9;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+}
+.main-content{
+  display: flex;
+  flex: 1;
+}
+
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 5px;
+  border-bottom: 2px solid red;
+}
+
+.box .content{
+  margin: 20px 0 0 0;
+}
+
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+
+.left .content p{
+  text-align: justify;
+}
+
+/* .left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: .3s;
+}
+.left .content .social a span:hover{
+  background-color: #f12020;
+} */
+
+
+
+
+button{
+  color: white;
+  width: 55px;
+  border-radius: 5px;
+  text-align: center;
+  background: #1a1a1a;
+  padding: 5px 8px;
+  line-height: 1.3rem;
+
+}
+
+
+button:hover{
+  background: #f12020;
+  color: white;
+}
+
+.right .content .btn button{
+  transition: .3s;
+}
+
+.right .content form div{
+  display: inline;
+  margin: auto;
+}
+.right .content form{
+  display: grid-flex;
+}
+
+.right .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: .3s;
+}
+.right .content .social a span:hover{
+  background-color: #f12020;
+}
+
+.right .content input{
+  color: black;
+  font-weight: bolder;
+}
+
+
+.right .content .social{
+  margin: 20px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and  {
+
+}

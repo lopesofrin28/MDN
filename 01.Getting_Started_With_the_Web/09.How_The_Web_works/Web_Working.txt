@@ -1,0 +1,12 @@
+1] Explanation Of Client & Server
+2] Your internet connection
+3] TCP/IP
+4] DNS
+5] HTTP
+6] Component files
+  a] Code files
+  b] Assets
+
+
+* DNS Explained
+* Packets Explained

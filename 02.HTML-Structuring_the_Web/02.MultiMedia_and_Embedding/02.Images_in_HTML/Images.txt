@@ -1,0 +1,31 @@
+*How do we put an image on a webpage?
+-In order to put a simple image on a webpage, we use the <img> element. This is an empty element
+ (meaning that it has no text content or closing tag) that requires a minimum of one attribute to be useful —
+ src (sometimes spoken as its full title, source). The src attribute contains a path pointing to the image
+ you want to embed in the page, which can be a relative or absolute URL, in the same way as href attribute values in <a> elements.
+
+ *Alternative text
+-The next attribute we'll look at is alt. Its value is supposed to be a textual description of the image,
+for use in situations where the image cannot be seen/displayed or takes a long time to render because of a slow internet connection.
+
+*Width and height
+-You can use the width and height attributes to specify the width and height of your image.
+You can find your image's width and height in a number of ways.
+
+*Image titles
+-As with links, you can also add title attributes to images, to provide further supporting information if needed.
+This gives us a tooltip on mouse hover, just like link titles.
+
+*Annotating images with figures and figure captions
+-Speaking of captions, there are a number of ways that you could add a caption to go with your image.
+A better solution, is to use the HTML5 <figure> and <figcaption> elements. These are created for exactly this purpose:
+to provide a semantic container for figures, and to clearly link the figure to the caption.
+
+*CSS background images
+-You can also use CSS to embed images into webpages (and JavaScript, but that's another story entirely).
+The CSS background-image property, and the other background-* properties, are used to control background image placement.
+
+-So why bother with HTML images? As hinted to above, CSS background images are for decoration only.
+If you just want to add something pretty to your page to enhance the visuals, this is fine.
+Though, such images have no semantic meaning at all. They can't have any text equivalents,
+are invisible to screen readers, and so on. This is where HTML images shine!

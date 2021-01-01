@@ -1,0 +1,230 @@
+ In this lesson, we will take a proper look at the CSS Box Model so that you can build more complex layout tasks with an understanding
+of how it works and the terminology that relates to it.
+
+*Block and inline boxes
+-In CSS we broadly have two types of boxes — block boxes and inline boxes. These characteristics refer to how the box behaves in
+terms of page flow, and in relation to other boxes on the page:
+
+If a box is defined as a block, it will behave in the following ways:
+
+-The box will break onto a new line.
+-The box will extend in the inline direction to fill the space available in its container. In most cases this means that the box will
+become as wide as its container, filling up 100% of the space available.
+-The width and height properties are respected.
+-Padding, margin and border will cause other elements to be pushed away from the box
+
+Unless we decide to change the display type to inline, elements such as headings (e.g. <h1>) and <p> all use block as their outer
+display type by default.
+
+If a box has an outer display type of inline, then:
+
+-The box will not break onto a new line.
+-The width and height properties will not apply.
+-Vertical padding, margins, and borders will apply but will not cause other inline boxes to move away from the box.
+-Horizontal padding, margins, and borders will apply and will cause other inline boxes to move away from the box.
+
+The <a> element, used for links, <span>, <em> and <strong> are all examples of elements that will display inline by default.
+
+The type of box applied to an element is defined by display property values such as block and inline, and relates to the outer value
+of display.
+
+
+*Aside: Inner and outer display types
+- As mentioned above, boxes in CSS have an outer display type, which details whether the box is block or inline.
+
+Boxes also have an inner display type, however, which dictates how elements inside that box are laid out. By default, the elements
+inside a box are laid out in normal flow, which means that they behave just like any other block and inline elements (as explained
+above).
+
+We can, however, change the inner display type by using display values like flex. If we set display: flex; on an element, the outer
+display type is block, but the inner display type is changed to flex. Any direct children of this box will become flex items and will
+be laid out according to the rules set out in the Flexbox spec, which you'll learn about later on.
+
+*Examples of different display types
+-Let's move on and have a look at some examples. Below we have three different HTML elements, all of which have an outer display type
+of block. The first is a paragraph, which has a border added in CSS. The browser renders this as a block box, so the paragraph begins
+on a new line, and expands to the full width available to it.
+
+-The second is a list, which is laid out using display: flex. This establishes flex layout for the items inside the container, however,
+the list itself is a block box and — like the paragraph — expands to the full container width and breaks onto a new line.
+
+-Below this, we have a block-level paragraph, inside which are two <span> elements. These elements would normally be inline, however,
+one of the elements has a class of block, and we have set it to display: block.
+
+
+*What is the CSS box model?
+-The full CSS box model applies to block boxes, inline boxes only use some of the behavior defined in the box model. The model defines
+how the different parts of a box — margin, border, padding, and content — work together to create a box that you can see on the page.
+To add some additional complexity, there is a standard and an alternate box model.
+
+*Parts of a box:
+Making up a block box in CSS we have the:
+
+1]Content box: The area where your content is displayed, which can be sized using properties like width and height.
+2]Padding box: The padding sits around the content as white space; its size can be controlled using padding and related properties.
+3]Border box: The border box wraps the content and any padding. Its size and style can be controlled using border and related properties
+4]Margin box: The margin is the outermost layer, wrapping the content, padding and border as whitespace between this box and other
+elements. Its size can be controlled using margin and related properties.
+
+
+*The standard CSS box model
+In the standard box model, if you give a box a width and a height attribute, this defines the width and height of the content box.
+Any padding and border is then added to that width and height to get the total size taken up by the box. This is shown in the image
+below.
+
+If we assume that the box has the following CSS defining width, height, margin, border, and padding:
+
+.box {
+  width: 350px;
+  height: 150px;
+  margin: 10px;
+  padding: 25px;
+  border: 5px solid black;
+}
+
+The space taken up by our box using the standard box model will actually be 410px (350 + 25 + 25 + 5 + 5), and the height
+210px (150 + 25 + 25 + 5 + 5), as the padding and border are added to the width used for the content box.
+
+
+*The alternative CSS box model
+You might think it is rather inconvenient to have to add up the border and padding to get the real size of the box, and you would
+be right! For this reason, CSS had an alternative box model introduced some time after the standard box model. Using this model,
+any width is the width of the visible box on the page, therefore the content area width is that width minus the width for the padding
+and border. The same CSS as used above would give the below result (width = 350px, height = 150px).
+
+Showing the size of the box when the alternate box model is being used.
+
+By default, browsers use the standard box model. If you want to turn on the alternative model for an element you do so by
+setting box-sizing: border-box on it. By doing this you are telling the browser to take the border box as the area defined
+by any size you set.
+
+.box {
+  box-sizing: border-box;
+}
+
+If you want all of your elements to use the alternative box model, and this is a common choice among developers, set the box-sizing
+property on the <html> element, then set all other elements to inherit that value, as seen in the snippet below.
+
+
+
+*Use browser DevTools to view the box model
+-Your browser developer tools can make understanding the box model far easier. If you inspect an element in Firefox's DevTools, you
+can see the size of the element plus its margin, padding, and border. Inspecting an element in this way is a great way to find out
+if your box is really the size you think it is!
+
+*Margins, padding, and borders
+-You've already seen the margin, padding, and border properties at work in the example above. The properties used in that example are
+shorthands and allow us to set all four sides of the box at once. These shorthands also have equivalent longhand properties, which
+allow control over the different sides of the box individually.
+
+
+*Margin
+The margin is an invisible space around your box. It pushes other elements away from the box. Margins can have positive or negative
+values. Setting a negative margin on one side of your box can cause it to overlap other things on the page. Whether you are using the
+ standard or alternative box model, the margin is always added after the size of the visible box has been calculated.
+
+We can control all margins of an element at once using the margin property, or each side individually using the equivalent longhand
+ properties:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+*Margin collapsing
+-A key thing to understand about margins is the concept of margin collapsing. If you have two elements whose margins touch, and both
+margins are positive, those margins will combine to become one margin, which is the size of the largest individual margin. If one or
+both margins are negative, the amount of negative value will subtract from the total.
+
+In the example below, we have two paragraphs. The top paragraph has a margin-bottom of 50 pixels. The second paragraph has a
+margin-top of 30 pixels. The margins have collapsed together so the actual margin between the boxes is 50 pixels and not the total
+of the two margins.
+
+You can test this by setting the margin-top of paragraph two to 0. The visible margin between the two paragraphs will not change —
+it retains the 50 pixels set in the bottom-margin of paragraph one. If you set it to -10px, you'll see that the overall margin becomes
+40px — it subtracts from the 50px.
+
+
+*Borders
+The border is drawn between the margin and the padding of a box. If you are using the standard box model, the size of the border is
+added to the width and height of the box. If you are using the alternative box model then the size of the border makes the content
+box smaller as it takes up some of that available width and height.
+
+For styling borders, there are a large number of properties — there are four borders, and each border has a style, width and color
+that we might want to manipulate.
+
+You can set the width, style, or color of all four borders at once using the border property.
+
+To set the properties of each side individually, you can use:
+
+border-top
+border-right
+border-bottom
+border-left
+To set the width, style, or color of all sides, use the following:
+
+border-width
+border-style
+border-color
+To set the width, style, or color of a single side, you can use one of the most granular longhand properties:
+
+border-top-width
+border-top-style
+border-top-color
+border-right-width
+border-right-style
+border-right-color
+border-bottom-width
+border-bottom-style
+border-bottom-color
+border-left-width
+border-left-style
+border-left-color
+
+
+
+*Padding
+The padding sits between the border and the content area. Unlike margins you cannot have negative amounts of padding, so the value
+must be 0 or a positive value. Any background applied to your element will display behind the padding, and it is typically used to
+push the content away from the border.
+
+We can control the padding on each side of an element individually using the padding property, or each side individually using the
+equivalent longhand properties:
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+If you change the values for padding on the class .box in the example below you can see that this changes where the text begins in
+relation to the box.
+
+You can also change the padding on the class .container, which will make space between the container and the box. Padding can be
+changed on any element, and will make space between its border and whatever is inside the element.
+
+
+
+*The box model and inline boxes
+All of the above applies fully to block boxes. Some of the properties can apply to inline boxes too, such as those created by a <span>
+ element.
+
+In the example below, we have a <span> inside a paragraph and have applied a width, height, margin, border, and padding to it.
+You can see that the width and height are ignored. The vertical margin, padding, and border are respected but they do not change
+the relationship of other content to our inline box and so the padding and border overlaps other words in the paragraph.
+Horizontal padding, margins, and borders are respected and will cause other content to move away from the box.
+
+
+
+*Using display: inline-block
+There is a special value of display, which provides a middle ground between inline and block. This is useful for situations where you
+do not want an item to break onto a new line, but do want it to respect width and height and avoid the overlapping seen above.
+
+An element with display: inline-block does a subset of the block things we already know about:
+
+-The width and height properties are respected.
+-padding, margin, and border will cause other elements to be pushed away from the box.
+-It does not, however, break onto a new line, and will only become larger than its content if you explicitly add width and height
+properties.
+
+In this next example, we have added display: inline-block to our <span> element. Try changing this to display: block or removing
+the line completely to see the difference in display models.

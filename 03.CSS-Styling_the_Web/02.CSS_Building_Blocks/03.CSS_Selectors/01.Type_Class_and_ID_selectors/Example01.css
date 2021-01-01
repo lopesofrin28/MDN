@@ -1,0 +1,18 @@
+span {
+background-color: yellow;
+}
+
+strong, em {
+  color: rebeccapurple;
+}
+
+
+/* combining two elementwith similar property */
+/* em {
+  color: rebeccapurple;
+}  */
+
+
+h1{
+  color: blue;
+}

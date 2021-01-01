@@ -1,0 +1,191 @@
+When styling links, it is important to understand how to make use of pseudo-classes to style link states effectively, and how to style links for use in common varied interface features such as navigation menus and tabs. We'll look at all these topics in this article.
+
+*Let's look at some links
+We looked at how links are implemented in your HTML according to best practices in Creating hyperlinks. In this article we'll build on this knowledge, showing you best practices for styling links.
+
+-Link states
+The first thing to understand is the concept of link states — different states that links can exist in, which can be styled using different pseudo-classes:
+
+    Link (unvisited): The default state that a link resides in, when it isn't in any other state. This can be specifically styled using the :link pseudo class.
+    Visited: A link when it has already been visited (exists in the browser's history), styled using the :visited pseudo class.
+    Hover: A link when it is being hovered over by a user's mouse pointer, styled using the :hover pseudo class.
+    Focus: A link when it has been focused (for example moved to by a keyboard user using the Tab key or similar, or programmatically focused using HTMLElement.focus()) — this is styled using the :focus pseudo class.
+    Active: A link when it is being activated (e.g. clicked on), styled using the :active pseudo class.
+
+
+-Default styles
+The following example illustrates what a link will behave like by default (the CSS is simply enlarging and centering the text to make it stand out more.)
+
+    <p><a href="#">A simple link</a></p>
+    p {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+
+You'll notice a few things as you explore the default styles:
+
+    Links are underlined.
+    Unvisited links are blue.
+    Visited links are purple.
+    Hovering a link makes the mouse pointer change to a little hand icon.
+    Focused links have an outline around them — you should be able to focus on the links on this page with the keyboard by pressing the tab key (On Mac, you'll need to use option + tab, or enable the Full Keyboard Access: All controls option by pressing Ctrl + F7.)
+    Active links are red (Try holding down the mouse button on the link as you click it.)
+
+
+The default styles can be turned off/changed using the following CSS properties:
+
+    color for the text color.
+    cursor for the mouse pointer style — you shouldn't turn this off unless you've got a very good reason.
+    outline for the text outline (an outline is similar to a border, the only difference being that border takes up space in the box and an outline doesn't; it just sits over the top of the background). The outline is a useful accessibility aid, so think carefully before turning it off; you should at least double up the styles given to the link hover state on the focus state too.
+
+
+-Styling some links
+
+--To remember the order, you could try using a mnemonic like [LoVe Fears HAte]
+Remember Note:  [LoVe Fears HAte]
+
+Now we've looked at the default states in some detail, let's look at a typical set of link styles.
+
+To start off with, we'll write out our empty rulesets:
+
+      a {
+
+      }
+
+      a:link {
+
+      }
+
+      a:visited {
+
+      }
+
+      a:focus {
+
+      }
+
+      a:hover {
+
+      }
+
+      a:active {
+
+      }
+This order is important because the link styles build on one another, for example the styles in the first rule will apply to all the subsequent ones, and when a link is being activated, it is also being hovered over. If you put these in the wrong order, things won't work properly.
+
+
+
+
+
+*Including icons on links
+A common practice is to include icons on links to provide more of an indicator as to what kind of content the link points to. Let's look at a really simple example that adds an icon to external links (links that lead to other sites.) Such an icon usually looks like a little arrow pointing out of a box — for this example, we'll use this great example from icons8.com.
+[https://icons8.com/icon/741/external-link]
+Let's look at some HTML and CSS that will give us the effect we want. First, some simple HTML to style:
+
+    <p>For more information on the weather, visit our <a href="#">weather page</a>,
+    look at <a href="http://#">weather on Wikipedia</a>, or check
+    out <a href="http://#">weather on Extreme Science</a>.</p>
+
+
+Next, the CSS:
+
+      body {
+        width: 300px;
+        margin: 0 auto;
+        font-family: sans-serif;
+      }
+
+      p {
+        line-height: 1.4;
+      }
+
+      a {
+        outline: none;
+        text-decoration: none;
+        padding: 2px 1px 0;
+      }
+
+      a:link {
+        color: blue;
+      }
+
+      a:visited {
+        color: purple;
+      }
+
+      a:focus, a:hover {
+        border-bottom: 1px solid;
+      }
+
+      a:active {
+        color: red;
+      }
+
+      a[href*="http"] {
+        background: url('https://mdn.mozillademos.org/files/12982/external-link-52.png') no-repeat 100% 0;
+        background-size: 16px 16px;
+        padding-right: 19px;
+      }
+
+
+
+*Styling links as buttons
+The tools you've explored so far in this article can also be used in other ways. For example, states like hover can be used to style many different elements, not just links — you might want to style the hover state of paragraphs, list items, or other things.
+
+In addition, links are quite commonly styled to look and behave like buttons in certain circumstances — a website navigation menu is usually marked up as a list containing links, and this can be easily styled to look like a set of control buttons or tabs that provide the user with access to other parts of the site. Let's explore how.
+
+First, some HTML:
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Pizza</a></li>
+      <li><a href="#">Music</a></li>
+      <li><a href="#">Wombats</a></li>
+      <li><a href="#">Finland</a></li>
+    </ul>
+
+
+And now our CSS:
+
+    body,html {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    ul {
+      padding: 0;
+      width: 100%;
+    }
+
+    li {
+      display: inline;
+    }
+
+    a {
+      outline: none;
+      text-decoration: none;
+      display: inline-block;
+      width: 19.5%;
+      margin-right: 0.625%;
+      text-align: center;
+      line-height: 3;
+      color: black;
+    }
+
+    li:last-child a {
+      margin-right: 0;
+    }
+
+    a:link, a:visited, a:focus {
+      background: yellow;
+    }
+
+    a:hover {
+      background: orange;
+    }
+
+    a:active {
+      background: red;
+      color: white;
+    }

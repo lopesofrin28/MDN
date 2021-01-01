@@ -1,0 +1,46 @@
+* The head of an HTML document is the part that is not displayed in the web browser when the page is loaded.
+It contains information such as the page <title>, links to CSS (if you choose to style your HTML content with CSS),
+links to custom favicons, and other metadata (data about the HTML, such as the author, and important keywords that
+describe the document.)
+
+* Adding a title:
+-The <title> element is metadata that represents the title of the overall HTML document (not the document's content.)
+
+*The <title> element contents are also used in other ways. For example, if you try bookmarking the page
+(Bookmarks > Bookmark This Page or the star icon in the URL bar in Firefox), you will see the <title> contents filled
+in as the suggested bookmark name.
+
+
+* Metadata: the <meta> element
+Metadata is data that describes data, and HTML has an "official" way of adding metadata to a document — the <meta> element.
+Of course, the other stuff we are talking about in this article could also be thought of as metadata too.
+
+
+* Adding an author and description:
+
+Many <meta> elements include name and content attributes:
+  -name specifies the type of meta element it is; what type of information it contains.
+  -content specifies the actual meta content.
+
+* Other types of metadata
+
+-As you travel around the web, you'll find other types of metadata, too.
+A lot of the features you'll see on websites are proprietary creations, designed to provide certain sites
+(such as social networking sites) with specific pieces of information they can use.
+
+-For example, Open Graph Data(og) is a metadata protocol that Facebook invented to provide richer metadata for websites.
+-Twitter also has its own similar proprietary metadata called Twitter Cards, which has a similar effect when the site's
+URL is displayed on twitter.com.
+
+
+*Adding custom icons to your site:
+
+-To further enrich your site design, you can add references to custom icons in your metadata,
+and these will be displayed in certain contexts. The most commonly used of these is the favicon
+(short for "favorites icon", referring to its use in the "favorites" or "bookmarks" lists in browsers).
+
+
+* Applying CSS and JavaScript to HTML:
+-Just about all websites you'll use in the modern day will employ CSS to make them look cool,
+and JavaScript to power interactive functionality, such as video players, maps, games, and more.
+These are most commonly applied to a web page using the <link> element and the <script> element, respectively.

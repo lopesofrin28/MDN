@@ -1,0 +1,20 @@
+*The natural or intrinsic size of things
+HTML Elements have a natural size, set before they are affected by any CSS. A straightforward example is an image. An image has a width and a height defined in the image file it is embedding into the page. This size is described as the intrinsic size — which comes from the image itself.
+If you place an image on a page and do not change its height and width, either using attributes on the <img> tag or CSS, it will be displayed using that intrinsic size
+
+*Setting a specific size
+We can of course give elements in our design a specific size. When a size is given to an element (and the content of which then needs to fit into that size) we refer to it as an extrinsic size. Take our <div> from the example above — we can give it specific width and height values, and it will now have that size no matter what content is placed into it. As we discovered in our previous lesson on overflow, a set height can cause content to overflow if there is more content than the element has space to fit inside it.
+
+-Using percentages
+In many ways, percentages act like length units, and as we discussed in the lesson on values and units, they can often be used interchangeably with lengths. When using a percentage you need to be aware what it is a percentage of. In the case of a box inside another container, if you give the child box a percentage width it will be a percentage of the width of the parent container.
+
+-Percentage margins and padding
+If you set margins and padding as a percentage, you may notice some strange behavior. In the below example we have a box. We have given the inner box a margin of 10% and a padding of 10%. The padding and margin on the top and bottom of the box are the same size as the margin on the left and right.
+
+-min- and max- sizes
+In addition to giving things a fixed size, we can ask CSS to give an element a minimum or a maximum size. If you have a box that might contain a variable amount of content, and you always want it to be at least a certain height, you could set the min-height property on it. The box will always be at least this height, but will then grow taller if there is more content than the box has space for at its minimum height.
+
+-Viewport units
+The viewport — which is the visible area of your page in the browser you are using to view a site — also has a size. In CSS we have units which relate to the size of the viewport — the vw unit for viewport width, and vh for viewport height. Using these units you can size something relative to the viewport of the user.
+
+1vh is equal to 1% of the viewport height, and 1vw is equal to 1% of the viewport width. You can use these units to size boxes, but also text. In the example below we have a box which is sized as 20vh and 20vw. The box contains a letter A, which has been given a font-size of 10vh.

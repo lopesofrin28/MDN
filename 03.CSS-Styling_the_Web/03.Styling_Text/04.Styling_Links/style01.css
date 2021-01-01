@@ -1,0 +1,30 @@
+a {
+  outline-color: invert;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #3498DB;
+}
+
+a:visited {
+ color: #325441;
+}
+
+a:focus {
+  border-bottom: 1px solid red;
+  background-color: #9B59B6 ;
+  color: #F11F09 ;
+}
+
+a:hover {
+  color: #F7FA01 ;
+  background-color: #FA01E4 ;
+  border-bottom: 1px solid black;
+}
+
+a:active {
+  color: #F1F7ED ;
+  background-color: #0022FB ;
+}

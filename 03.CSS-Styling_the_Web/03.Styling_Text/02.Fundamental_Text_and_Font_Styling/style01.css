@@ -1,0 +1,13 @@
+html{
+  font-weight: bold;
+  font-family: Arial;
+}
+
+p{
+font-family: 'Sedgwick Ave', cursive;
+color:red;
+word-spacing:5px;
+letter-spacing:5px;
+text-shadow:2px 2px 0px green,
+4px 4px 0px blue
+}

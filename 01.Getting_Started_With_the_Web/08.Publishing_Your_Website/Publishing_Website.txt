@@ -1,0 +1,32 @@
+IMPORTANT:
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Publishing_your_website
+
+1]  Getting hosting and a domain name
+-Web hosting is rented file space on a hosting company's web server.
+  You put website files on the web server. The web server provides website content to website visitors.
+
+-A domain name is the unique address where people find your website,
+such as http://www.mozilla.org or http://www.bbc.co.uk. You can rent your domain name for as many years as you want
+from a domain registrar.
+
+2]  Using an online tool like GitHub or Google App Engine
+
+3]  Using a web-based IDE such as CodePen
+    -JSFiddle
+    -Glitch
+    -JS Bin
+    -CodePen
+
+
+4]  Publishing via GitHub
+-First of all, sign up for GitHub and verify your email address.
+-Next, you need to create a repository to store files.
+-On this page, in the Repository name box, enter username.github.io, where username is your username.
+  For example, our friend Bob Smith would enter bobsmith.github.io.
+-Check the "Initialize this repository with a README" box. Then click Create repository.
+-Drag and drop the content of your website folder into your repository. Then click Commit changes.
+  (Note: Make sure your folder has an index.html file.)
+-Navigate your browser to username.github.io to see your website online.
+For example, for the username chrisdavidmills, go to chrisdavidmills.github.io.
+  (Note: It may take a few minutes for your website to go live. If your website does not display immediately,
+   wait a few minutes. Try again.)

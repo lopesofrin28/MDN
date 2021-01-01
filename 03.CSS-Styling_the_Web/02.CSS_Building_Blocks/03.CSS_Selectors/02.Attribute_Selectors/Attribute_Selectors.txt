@@ -1,0 +1,37 @@
+*Presence and value selectors
+-These selectors enable the selection of an element based on the presence of an attribute alone (for example href), or on various
+different matches against the value of the attribute.
+
+Selector	Example	Description
+
+-[attr]	a[title]	Matches elements with an attr attribute (whose name is the value in square brackets).
+
+-[attr=value]	a[href="https://example.com"]	Matches elements with an attr attribute whose value is exactly value —
+the string inside the quotes.
+
+-[attr~=value]	p[class~="special"]
+Matches elements with an attr attribute whose value is exactly value, or contains value in its (space separated) list of values.
+
+-[attr|=value]	div[lang|="zh"]	Matches elements with an attr attribute whose value is exactly value or begins with value immediately
+followed by a hyphen.
+
+*Substring matching selectors
+-These selectors allow for more advanced matching of substrings inside the value of your attribute. For example, if you had classes of
+box-warning and box-error and wanted to match everything that started with the string "box-", you could use [class^="box-"] to select
+them both (or [class|="box"] as described in section above).
+
+-[attr^=value]	li[class^="box-"]	Matches elements with an attr attribute (whose name is the value in square brackets),
+ whose value begins with value.
+
+-[attr$=value]	li[class$="-box"]	Matches elements with an attr attribute whose value ends with value.
+
+-[attr*=value]	li[class*="box"]	Matches elements with an attr attribute whose value contains value anywhere within the string.
+
+-(Aside: It may help to note that ^ and $ have long been used as anchors in so-called regular expressions to mean begins with
+ and ends with.)
+
+
+*Case-sensitivity
+-If you want to match attribute values case-insensitively you can use the value i before the closing bracket. This flag tells the
+browser to match ASCII characters case-insensitively. Without the flag the values will be matched according to the case-sensitivity
+of the document language — in HTML's case it will be case sensitive.
